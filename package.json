@@ -1,0 +1,12 @@
+{
+  "name": "geny",
+  "version": "1.0.0",
+  "description": "Project template for creating CLI App with Nodejs",
+  "bin": "./bin/geny.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
