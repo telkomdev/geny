@@ -1,5 +1,7 @@
 'use strict';
 
+const giveColor = require('./colors');
+
 function Geny(config) {
     //config = {} || config;
     this.config = config;
@@ -10,4 +12,6 @@ Geny.prototype.exec = function() {
     console.log(config);
 };
 
-module.exports = Geny;
+module.exports = {
+    Geny, giveColor
+};
