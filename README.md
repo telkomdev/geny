@@ -9,7 +9,12 @@ The npm link command allow us to locally ‘symlink a package folder’, and for
 The npm link command is used from within the NodeJS package directory we want to symlink:
 
 ```shell
-$ node link
+$ npm link
+```
+
+to uninstall
+```shell
+$ npm unlink
 ```
 
 Now we can executed from anywhere
