@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const Geny = require('../index');
+const index = require('../index');
 
 const VERSION = '1.0.0';
 
@@ -27,11 +27,11 @@ const main = () => {
 	}
 
 	if (args[0] === '-version') {
-		console.log(`geny version ${VERSION}`);
+		console.log(index.giveColor(`geny version ${VERSION}`, 'red'));
 		process.exit(0);
 	}
 
-	const geny = new Geny({argOne: args[0]});
+	const geny = new index.Geny({argOne: args[0]});
 	geny.exec();
 		
 };
