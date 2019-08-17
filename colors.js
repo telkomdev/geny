@@ -30,4 +30,7 @@ const giveColor = (text, color) => {
     return `${COLORS[color]}${text}${COLORS.reset}`;
 };
 
+// usage
+// giveColor(`hello`, 'red');
+
 module.exports = giveColor;
