@@ -12,6 +12,7 @@ const main = () => {
 		Generate something
 		
 		Usage:
+		run | run geny
 		-h -help | show help
 		-version | show version
 	`;
@@ -31,8 +32,10 @@ const main = () => {
 		process.exit(0);
 	}
 
-	const geny = new index.Geny({argOne: args[0]});
-	geny.exec();
+	if (args[0] === 'run') {
+		const geny = new index.Geny({argOne: args[0]});
+		geny.exec();
+	}
 		
 };
 
