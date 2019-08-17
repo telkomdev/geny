@@ -1,6 +1,7 @@
 'use strict';
 
 const giveColor = require('./colors');
+const menuAction = require('./menu');
 
 function Geny(config) {
     //config = {} || config;
@@ -8,8 +9,7 @@ function Geny(config) {
 }
 
 Geny.prototype.exec = function() {
-    const config = this.config;
-    console.log(config);
+    menuAction();
 };
 
 module.exports = {
